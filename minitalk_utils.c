@@ -7,6 +7,8 @@ int	ft_atoi_pid(char *str)
 
 	i = 0;
 	pid = 0;
+	if (str[i] == '+')
+		i++;
 	while (str[i])
 	{
 		if (str[i] >= '0' && str[i] <= '9')
